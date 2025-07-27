@@ -21,7 +21,7 @@
             display: flex;
             flex-direction: column;
         }
-        #cpuLabel {
+        #cpuLabel, #memoryLabel {
             font-size: 48px;
             text-align: right;
         }
@@ -40,17 +40,19 @@
 <body>
     <div id="monitor">
         <div id="cpuLabel">0%</div>
+        <div id="memoryLabel">0 MB</div>
         <div id="chart"></div>
     </div>
     <script>
         const cpuLabel = document.getElementById('cpuLabel');
+        const memoryLabel = document.getElementById('memoryLabel');
         const chart = document.getElementById('chart');
         const history = [];
 
         setInterval(async () => {
-            const response = await fetch('/cpu');
-            const data = await response.json();
-            const cpuUsage = Math.round(data.cpuUsage);
+            const cpuResponse = await fetch('/cpu');
+            const cpuData = await cpuResponse.json();
+            const cpuUsage = Math.round(cpuData.cpuUsage);
 
             cpuLabel.textContent = `${cpuUsage}%`;
 
@@ -66,6 +68,13 @@
                 bar.style.height = `${value}%`;
                 chart.appendChild(bar);
             }
+
+            const memoryResponse = await fetch('/memory');
+            const memoryData = await memoryResponse.json();
+            const memoryUsage = Math.round(memoryData.memoryUsage);
+
+            memoryLabel.textContent = `${memoryUsage} MB`;
+
         }, 1000);
     </script>
 </body>
