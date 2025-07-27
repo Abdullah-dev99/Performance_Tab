@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/cpuperfmonitor3/myapp.csproj",
+      "projectUniqueName": "/home/user/Performance_Tab/myapp.csproj",
       "projectName": "myapp",
-      "projectPath": "/home/user/cpuperfmonitor3/myapp.csproj",
+      "projectPath": "/home/user/Performance_Tab/myapp.csproj",
       "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/cpuperfmonitor3/obj/",
+      "outputPath": "/home/user/Performance_Tab/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/user/.nuget/NuGet/NuGet.Config"

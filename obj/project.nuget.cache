@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GLGXDYCuqec=",
+  "dgSpecHash": "uN2RXE5XZ+Q=",
   "success": true,
-  "projectFilePath": "/home/user/cpuperfmonitor3/myapp.csproj",
+  "projectFilePath": "/home/user/Performance_Tab/myapp.csproj",
   "expectedPackageFiles": [
     "/home/user/.nuget/packages/system.device.gpio/3.1.0/system.device.gpio.3.1.0.nupkg.sha512"
   ],
