@@ -1,12 +1,362 @@
 {
   "Version": 1,
-  "Hash": "Bu8PBqdGWSDWS1JLCRMbPcyBfmpUPKhI0r6FHibBmLM=",
+  "Hash": "ulSc33knxBB7O5J0QV/qh13wOI+fAFi8rGsVReKC3k8=",
   "Source": "myapp",
   "BasePath": "_content/myapp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "myapp/wwwroot",
+      "Source": "myapp",
+      "ContentRoot": "/home/user/cpuperfmonitor3/wwwroot/",
+      "BasePath": "_content/myapp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/user/cpuperfmonitor3/obj/Debug/net9.0/compressed/oim320fj0y-momlbs4gdl.gz",
+      "SourceId": "myapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/user/cpuperfmonitor3/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/myapp",
+      "RelativePath": "index#[.{fingerprint=momlbs4gdl}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/user/cpuperfmonitor3/wwwroot/index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "a19b5wcxph",
+      "Integrity": "fqf0SxkSt6xoqa6QGqTdTySuuKxCpimDRVvd59bmKfM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/user/cpuperfmonitor3/wwwroot/index.html"
+    },
+    {
+      "Identity": "/home/user/cpuperfmonitor3/wwwroot/index.html",
+      "SourceId": "myapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/user/cpuperfmonitor3/wwwroot/",
+      "BasePath": "_content/myapp",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "momlbs4gdl",
+      "Integrity": "FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.html",
+      "AssetFile": "/home/user/cpuperfmonitor3/obj/Debug/net9.0/compressed/oim320fj0y-momlbs4gdl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001367989056"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "730"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fqf0SxkSt6xoqa6QGqTdTySuuKxCpimDRVvd59bmKfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Jul 2025 19:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/home/user/cpuperfmonitor3/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1864"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Jul 2025 19:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "/home/user/cpuperfmonitor3/obj/Debug/net9.0/compressed/oim320fj0y-momlbs4gdl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fqf0SxkSt6xoqa6QGqTdTySuuKxCpimDRVvd59bmKfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Jul 2025 19:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fqf0SxkSt6xoqa6QGqTdTySuuKxCpimDRVvd59bmKfM="
+        }
+      ]
+    },
+    {
+      "Route": "index.momlbs4gdl.html",
+      "AssetFile": "/home/user/cpuperfmonitor3/obj/Debug/net9.0/compressed/oim320fj0y-momlbs4gdl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001367989056"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "730"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fqf0SxkSt6xoqa6QGqTdTySuuKxCpimDRVvd59bmKfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Jul 2025 19:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "momlbs4gdl"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY="
+        }
+      ]
+    },
+    {
+      "Route": "index.momlbs4gdl.html",
+      "AssetFile": "/home/user/cpuperfmonitor3/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1864"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Jul 2025 19:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "momlbs4gdl"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoHEDN0jYRZo0F1dWgEl5nRZVOJVK9sO+BGVikBo1xY="
+        }
+      ]
+    },
+    {
+      "Route": "index.momlbs4gdl.html.gz",
+      "AssetFile": "/home/user/cpuperfmonitor3/obj/Debug/net9.0/compressed/oim320fj0y-momlbs4gdl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fqf0SxkSt6xoqa6QGqTdTySuuKxCpimDRVvd59bmKfM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Jul 2025 19:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "momlbs4gdl"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fqf0SxkSt6xoqa6QGqTdTySuuKxCpimDRVvd59bmKfM="
+        }
+      ]
+    }
+  ]
 }

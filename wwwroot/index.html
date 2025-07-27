@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance Monitor</title>
+    <style>
+        body {
+            background-color: #1E1E1E;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #monitor {
+            width: 800px;
+            height: 400px;
+            border: 1px solid #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        #cpuLabel {
+            font-size: 48px;
+            text-align: right;
+        }
+        #chart {
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+        }
+        .bar {
+            background-color: DeepSkyBlue;
+            width: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="monitor">
+        <div id="cpuLabel">0%</div>
+        <div id="chart"></div>
+    </div>
+    <script>
+        const cpuLabel = document.getElementById('cpuLabel');
+        const chart = document.getElementById('chart');
+        const history = [];
+
+        setInterval(async () => {
+            const response = await fetch('/cpu');
+            const data = await response.json();
+            const cpuUsage = Math.round(data.cpuUsage);
+
+            cpuLabel.textContent = `${cpuUsage}%`;
+
+            history.push(cpuUsage);
+            if (history.length > 100) {
+                history.shift();
+            }
+
+            chart.innerHTML = '';
+            for (const value of history) {
+                const bar = document.createElement('div');
+                bar.classList.add('bar');
+                bar.style.height = `${value}%`;
+                chart.appendChild(bar);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
