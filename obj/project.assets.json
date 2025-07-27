@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/build/myapp/myapp.csproj",
+      "projectUniqueName": "/home/user/cpuperfmonitor3/myapp.csproj",
       "projectName": "myapp",
-      "projectPath": "/build/myapp/myapp.csproj",
+      "projectPath": "/home/user/cpuperfmonitor3/myapp.csproj",
       "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/build/myapp/obj/",
+      "outputPath": "/home/user/cpuperfmonitor3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/user/.nuget/NuGet/NuGet.Config"
